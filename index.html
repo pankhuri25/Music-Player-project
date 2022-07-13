@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- External Customized Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive-index.css" />
+
+    <!-- Title of Page -->
+    <title>Ninja Studio</title>
+
+    <!-- Font Awesome Script for icons -->
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- <h1>Welcome Ninja!!</h1>
+    <h3>Write your code here!</h3>
+    <h3>A CSS and JS file has been created and linked for you already.</h3>
+    <h3>Feel free to change the directory structure to your liking.</h3>
+    <h3>Do not delete any .json file from CodeSandbox</h3> -->
+
+    <!-- Header of Page (Navigation bar) which is futher divided into 2 flexible boxes (left) and (right)-->
+    <header>
+      <div id="header-section">
+        <!-- left side (logo + favourites) -->
+        <div id="left-header">
+          <div id="title">
+            <!-- Self designed logo -->
+            <div id="logo">
+              <img src="media/ninja music studio pro_page-0001 logo.jpg" />
+            </div>
+            <div id="logo-heading">
+              <h3>Ninja</h3>
+              <h3>Music</h3>
+              <h3>Studio</h3>
+            </div>
+          </div>
+          <div id="favourites">
+            <a href=""><b>Favourites</b></a>
+          </div>
+        </div>
+
+        <!-- right side (search bar + bell-icon + account photo) -->
+        <div id="right-header">
+          <!-- 1. Search Bar -->
+          <div class="search-container">
+            <button id="mic">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+            <input type="text" placeholder="Search" name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <!-- 2. Notification Bell Icon -->
+          <div id="notification-bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <!-- 3. Account Photo -->
+          <div id="display-picture">
+            <a href=""><img src="media/me.jpg" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fixed Header secition ended -->
+
+    <main>
+      <!-- Left side section starting here -->
+      <aside class="left-side">
+        <!-- International New Releases Carousel -->
+        <section class="flashcards">
+          <div class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide4" class="carousel__prev">
+                    Go to last slide
+                  </a>
+                  <a href="#carousel__slide2" class="carousel__next">
+                    Go to next slide
+                  </a>
+                </div>
+              </li>
+              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">
+                  Go to previous slide
+                </a>
+                <a href="#carousel__slide3" class="carousel__next">
+                  Go to next slide
+                </a>
+              </li>
+              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2" class="carousel__prev">
+                  Go to previous slide
+                </a>
+                <a href="#carousel__slide4" class="carousel__next">
+                  Go to next slide
+                </a>
+              </li>
+              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3" class="carousel__prev">
+                  Go to previous slide
+                </a>
+                <a href="#carousel__slide1" class="carousel__next">
+                  Go to first slide</a
+                >
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Latest Relesae Section -->
+        <section class="latest-release-songs">
+          <div>
+            <h2>Latest Release</h2>
+          </div>
+
+          <div class="songs">
+            <div class="flashcard">
+              <div class="song-details">
+                <img src="Latest_Release/hello darlin bunker.jpg" />
+                <div class="play-song">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3><a href="">Hello Darlin'</a></h3>
+                <p>April 15, 2022</p>
+              </div>
+              <div class="options">
+                <a href=""> <i class="fa-solid fa-ellipsis"></i> </a>
+              </div>
+            </div>
+
+            <div class="flashcard">
+              <div class="song-details">
+                <img src="Latest_Release/claustrophobic.jpg" />
+                <div class="play-song">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3><a href="">Claustrophobic</a></h3>
+                <p>April 15, 2022</p>
+              </div>
+              <div class="options">
+                <a href=""> <i class="fa-solid fa-ellipsis"></i> </a>
+              </div>
+            </div>
+
+            <div class="flashcard">
+              <div class="song-details">
+                <img src="Latest_Release/as it was harry styles.png" />
+                <div class="play-song">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3><a href="">As It Was</a></h3>
+                <p>April 15, 2022</p>
+              </div>
+              <div class="options">
+                <a href=""> <i class="fa-solid fa-ellipsis"></i> </a>
+              </div>
+            </div>
+
+            <div class="flashcard">
+              <div class="song-details">
+                <img src="Latest_Release/shivers.png" />
+                <div class="play-song">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3><a href="">Shivers</a></h3>
+                <p>April 15, 2022</p>
+              </div>
+              <div class="options">
+                <a href=""> <i class="fa-solid fa-ellipsis"></i> </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Artists -->
+        <section class="popular-artists">
+          <h2>Popular Artists</h2>
+
+          <div class="artists-list">
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img src="Popular_Artists/ed sheeran.jpg" alt="Ed Sheeran" />
+              </a>
+              <p>
+                Ed Sheeran
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/taylor swift.jpg"
+                  alt="Taylor Swift"
+                />
+              </a>
+              <p>
+                Taylor Swift
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img src="Popular_Artists/green day.jpg" alt="Green Day" />
+              </a>
+              <p>
+                Green Day
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/zara larsson.jpg"
+                  alt="Zara Larsson"
+                />
+              </a>
+              <p>
+                Zara Larsson
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img src="Popular_Artists/linkin park.jpg" alt="Linkin Park" />
+              </a>
+              <p>
+                Linkin Park
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/shawn mendes.jpg"
+                  alt="Shawn Mendes"
+                />
+              </a>
+              <p>
+                Shawn Mendes
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/avril lavigne.jpg"
+                  alt="Avril Lavigne"
+                />
+              </a>
+              <p>
+                Avril Lavigne
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/charlie puth.jpg"
+                  alt="Charlie Puth"
+                />
+              </a>
+              <p>
+                Charlie Puth
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img
+                  src="Popular_Artists/selena gomez.jpg"
+                  alt="Selena Gomez"
+                />
+              </a>
+              <p>
+                Selena Gomez
+              </p>
+            </div>
+
+            <div class="artist">
+              <a href="About_Artist_Screen.html">
+                <img src="Popular_Artists/dua lipa.jpg" alt="Dua Lipa" />
+              </a>
+              <p>
+                Dua Lipa
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Music Stations Section-->
+        <section class="song-categories">
+          <div id="stations">
+            <div id="div1">
+              <div id="div2">
+                <div id="div3">
+                  <div id="logo">
+                    <img src="ninja music studio pro_page-0001 logo.jpg" />
+                    <p><b>Stations</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories">
+            <div id="love" class="category-layout">
+              <img src="Music_themes/love music.jpg" />
+              <p>Love</p>
+            </div>
+            <div id="retro" class="category-layout">
+              <img src="Music_themes/retro music.jpg" />
+              <p>Retro</p>
+            </div>
+            <div id="chill" class="category-layout">
+              <img src="Music_themes/chill music.jpg" />
+              <p>Chill</p>
+            </div>
+            <div id="workout" class="category-layout">
+              <img src="Music_themes/workout music.jpg" />
+              <p>Workout</p>
+            </div>
+            <div id="rock" class="category-layout">
+              <img src="Music_themes/rock music.jpg" />
+              <p>Rock</p>
+            </div>
+            <div id="pop" class="category-layout">
+              <img src="Music_themes/pop music.jpg" />
+              <p>Pop</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Music Themes (3) Section -->
+        <section class="genres">
+          <div class="cards">
+            <div id="party" class="card-layout">
+              <img src="Music_themes/music party theme.jpg" />
+              <p>Party</p>
+            </div>
+            <div id="roadtrip" class="card-layout">
+              <img src="Music_themes/road trip music theme.jpg" />
+              <p>Road Trip</p>
+            </div>
+            <div id="electronic" class="card-layout">
+              <img src="Music_themes/electronic music theme.jpg" />
+              <p>Electronic</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest Songs - English Section -->
+        <section class="latest-songs">
+          <h2>Latest English</h2>
+          <div class="language">
+            <div class="language-song">
+              <img src="latest english/already there caroline.jpg" />
+              <p>Already There</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest english/heat waves.jpg" />
+              <p>Heat Waves</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest english/hung up on you.jpg" />
+              <p>Hung Up On You</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest english/let me love you greg scott.jpg" />
+              <p>Let Me Love You</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest english/woman doja cat.jpg" />
+              <p>Woman</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest english/you're it sara diamond.jpg" />
+              <p>You're It</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest Songs - Hindi Section -->
+        <section class="latest-songs">
+          <h2>Latest Hindi</h2>
+          <div class="language">
+            <div class="language-song">
+              <img src="latest hindi/whistle baja 2.0.jpg" />
+              <p>Whistle Baja 2.0</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest hindi/intezaar.jpg" />
+              <p>Intezaar</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest hindi/jee lenge hum.jpg" />
+              <p>Jee Lenge Hum</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest hindi/jordaar.jpg" />
+              <p>Jordaar</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest hindi/the fall.jpg" />
+              <p>The Fall</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="language-song">
+              <img src="latest hindi/maan le.jpg" />
+              <p>Maan Le</p>
+              <p>April 27, 2022</p>
+              <div class="play-option">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+      <!-- Left side div ending here -->
+
+      <label for="sidebar"><i class="fa-solid fa-bars"></i>Playlist</label>
+      <input type="checkbox" id="sidebar" />
+
+      <!-- Right side aside starting here -->
+      <aside class="right-side">
+        <!-- Side section Song's Queue  -->
+        <div class="heading">
+          <h1>Queue</h1>
+          <h4>
+            <a href="#queue-option-box"
+              >Queue <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
+          </h4>
+        </div>
+
+        <!-- Two Options available on clicking for more options (Queue) : Playlists, Favourite Songs  -->
+        <div class="queue-options" id="queue-option-box">
+          <p>
+            <a href style="color: #007bff; font-weight: bolder;">Playlists</a>
+          </p>
+          <hr />
+          <p>
+            <a href style="color: #007bff; font-weight: bolder;"
+              >Favourite songs</a
+            >
+          </p>
+        </div>
+
+        <!-- Song List under Queue -->
+        <div id="songs-queue">
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                01
+              </div>
+              <div class="coverer">
+                <img src="Playlist/bad liar.jpg" />
+                <div class="pbutton">
+                  <a href=""><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <!-- song name and singer/composer of the song -->
+              <div>
+                <div>
+                  Bad Liar
+                </div>
+                <p>
+                  Imagine Dragons
+                </p>
+              </div>
+            </div>
+
+            <!-- add to favourites using like button -->
+            <div class="right-content">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                02
+              </div>
+              <div class="coverer">
+                <img src="Playlist/happy ending.jpg" />
+                <div class="pbutton">
+                  <a href=""><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  Happy Ending
+                </div>
+                <p>
+                  Avril Lavigne
+                </p>
+              </div>
+            </div>
+
+            <div class="right-content">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                03
+              </div>
+              <div class="coverer">
+                <img src="Playlist/photograph.jpg" />
+                <div class="pbutton">
+                  <a href=""><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  Photograph
+                </div>
+                <p>
+                  Ed Sheeran
+                </p>
+              </div>
+            </div>
+
+            <div class="right-content">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                04
+              </div>
+              <div class="coverer">
+                <img src="Playlist/toxic.jpg" />
+                <div class="pbutton">
+                  <a href=""><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  Toxic
+                </div>
+                <p>
+                  Britney Spears
+                </p>
+              </div>
+            </div>
+
+            <div class="right-content">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                05
+              </div>
+              <div class="coverer">
+                <img src="Playlist/rich girl.jpg" />
+                <div class="pbutton">
+                  <a href=""><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  Rich Girl
+                </div>
+                <p>
+                  Gwen Stefani
+                </p>
+              </div>
+            </div>
+
+            <div class="right-content">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Right side aside ending here -->
+    </main>
+    <!-- Main Section over -->
+
+    <footer>
+      <div class="current-song">
+        <div id="current-song-image">
+          <img src="Playlist/happy ending.jpg" />
+        </div>
+
+        <div class="song-desc">
+          <div>
+            Happy Ending
+          </div>
+          <div>
+            Avril Lavigne
+          </div>
+        </div>
+        <div class="heart-and-ban-icon">
+          <span>
+            <i class="far fa-heart"></i>
+          </span>
+          <span>
+            <i class="fas fa-ban"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Right side of footer having various options -->
+      <div class="player">
+        <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+
+        <div id="slider">
+          <!-- timestamp-->
+          <div class="time">
+            0:01
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="0" class="slider" />
+          </div>
+
+          <div>
+            4:24
+          </div>
+        </div>
+      </div>
+
+      <div class="side-options">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input type="range" min="0" max="100" value="0" class="slider" />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
